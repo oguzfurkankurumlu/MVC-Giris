@@ -28,3 +28,4 @@ c:\Users\oguzf\Desktop\wissenders\MVC-Giris\obj\Debug\net8.0\refint\MVC-Giris.dl
 c:\Users\oguzf\Desktop\wissenders\MVC-Giris\obj\Debug\net8.0\MVC-Giris.pdb
 c:\Users\oguzf\Desktop\wissenders\MVC-Giris\obj\Debug\net8.0\MVC-Giris.genruntimeconfig.cache
 c:\Users\oguzf\Desktop\wissenders\MVC-Giris\obj\Debug\net8.0\ref\MVC-Giris.dll
+c:\Users\oguzf\Desktop\wissenders\MVC-Giris\obj\Debug\net8.0\MVC-Giris.sourcelink.json

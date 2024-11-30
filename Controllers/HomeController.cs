@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.Diagnostics.Contracts;
 using Microsoft.AspNetCore.Mvc;
 using MVC_Giris.Models;
 
@@ -11,6 +12,48 @@ public class HomeController : Controller
     public HomeController(ILogger<HomeController> logger)
     {
         _logger = logger;
+    }
+
+    // HTTPGet
+    // HTTPPost
+    // WEB SAYFALARI POST VE GET ILE CALISIR.
+    // GET: SAYFANIN HICBIR PARAMETREYE BAGLI OLMADAN TALEP EDILMESI.
+    // POST: SAYFAYA BİR PARAMETRE VEREREK SAYFANIN GONDERILMESI.
+
+ ///////////////////////////////////////////////////////////////////////////////////////
+
+    [HttpGet]
+    public IActionResult SaveUser(){
+        // BURASI GET İÇİN ÇALIŞIYOR
+        // İçeride bir SaveUser modeli oluşturur ve bu modeli View'a gönderir
+        // Amaç: Formu kullanıcının doldurması için görüntülemek.
+        // SAYFADAN BIR PARAMETRE ALACKSAK BIR DE POST HALI ICINDE YAZMAMIZ LAZIM
+        SaveUser user = new SaveUser();
+        return View(user);
+    }
+
+    [HttpPost]
+    public IActionResult SaveUser(SaveUser model){
+        // Kullanıcı formu doldurup "Gönder" butonuna bastığında,
+        // tarayıcı formdaki verileri sunucuya gönderir. Bu durumda bu metot çağrılır.
+        // Parametre olarak SaveUser model alır. Bu, kullanıcının gönderdiği form verilerini temsil eder.
+        // Örneğin: Kullanıcı adı alanına "Ayşe" yazmışsa, model.Name değeri "Ayşe" olacaktır.
+        // Eğer bir e-posta alanı varsa, gönderilen e-posta adresi de model.
+        //Email gibi bir property ile gelir.
+        // Amaç: Formdan gelen verileri işlemek.
+        return View();
+    }
+
+ ///////////////////////////////////////////////////////////////////////////////////////
+
+
+
+    public ActionResult MyPage(){
+        // KENDİ MVC SAYFAMIZI YAPALIM
+        // SAYFA OLUSTURMAK ICIN BIR ACTION BİR DE VİEWA IHTIYACIMIZ VAR
+        // EĞER RETURN VİEW DEDIGIMIZDE VİEW ADI VERMEZSEK, ACTION ADINDA BIR VİEW ARAYACKTIR SİSTEM.
+        // 
+        return View();
     }
 
     public IActionResult Index()

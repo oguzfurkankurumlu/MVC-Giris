@@ -1,0 +1,13 @@
+@model SaveUser
+
+@* HTML'de <form> etiketi, bir web sayfasında kullanıcıdan veri toplamak 
+ve bu veriyi bir sunucuya göndermek için kullanılır. *@
+
+<form method="post" action="/Home/SaveUser">
+@* HOME/SAVEUSER ISIMLI ACTIONA POST ET DEMEK
+HOMECONTROLE GIDER POST OLAN ACTIONU SECER SAVEUSER IÇIN  *@
+
+    <input name="UserName" type="text"  placeholder="Username">
+    <input type="submit" placeholder="Submit">
+
+</form>
