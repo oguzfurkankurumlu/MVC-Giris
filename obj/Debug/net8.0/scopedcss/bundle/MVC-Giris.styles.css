@@ -1,0 +1,49 @@
+/* _content/MVC-Giris/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-ciakon15pr] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-ciakon15pr] {
+  color: #0077cc;
+}
+
+.btn-primary[b-ciakon15pr] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-ciakon15pr], .nav-pills .show > .nav-link[b-ciakon15pr] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-ciakon15pr] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-ciakon15pr] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-ciakon15pr] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-ciakon15pr] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-ciakon15pr] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}

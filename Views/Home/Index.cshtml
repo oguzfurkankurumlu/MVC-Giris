@@ -1,0 +1,18 @@
+﻿
+
+@model List<Ogrenci>
+
+<ul>
+
+    @* 
+    Razor'da @ sembolü, HTML ile C# kodunu birbirinden ayırmak ve C# kodu yazmak için kullanılır.
+    Razor'da @foreach döngüsü, bir koleksiyondaki (örneğin List<Ogrenci>) her öğeyi döngü içinde işlemenizi sağlar. 
+    Örneğin, bir listeyi dolaşıp her bir öğeyi HTML olarak gösterebilirsiniz.
+    *@
+    @foreach(var item in Model){
+            <li>@item.Name</li>
+    }
+
+
+
+</ul>
